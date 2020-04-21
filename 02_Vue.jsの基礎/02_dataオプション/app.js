@@ -9,7 +9,7 @@ const vm = new Vue({
 
 /**
  * vm.$data.message
- * -> "Hello, World!"
+ * ->"Hello, World!"
  * vm.$data.message = 'Changed'
- * -> "Changed"
+ * "Changed"
  */

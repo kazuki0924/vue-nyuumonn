@@ -17,8 +17,7 @@ vm.$watch(
 )
 
 /**
- * vm.$data.message
- * -> "Hello, World!"
  * vm.$data.message = 'Changed'
+ * -> 変更後の値: Changed
  * -> "Changed"
  */
