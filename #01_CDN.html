@@ -10,6 +10,14 @@
       {{ message }}
     </div>
 
-    <script></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+      var app = new Vue({
+        el: '#app',
+        data: {
+          message: 'メッセージ'
+        }
+      })
+    </script>
   </body>
 </html>
