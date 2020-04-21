@@ -7,9 +7,7 @@
   </head>
   <body>
     <div id="app">
-      <p v-bind:title="message">
-        マウスポインターを当ててください
-      </p>
+      <p>合計 {{ sum.toString().replace(/(\d)(?=(\d{3})+$)/g, '$1,') }}円</p>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

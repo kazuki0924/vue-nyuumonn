@@ -2,7 +2,7 @@ const vm = new Vue({
   el: '#app',
   data() {
     return {
-      message: 'Hello, World!'
+      sum: 3000000
     }
   }
 })
