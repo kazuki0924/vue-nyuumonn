@@ -13,8 +13,8 @@
           <label>
             <input
               type="checkbox"
-              @change="toggle(todo)"
-              :checked="todo.done"
+              v-on:change="toggle(todo)"
+              v-bind:checked="todo.done"
             />
 
             <del v-if="todo.done">

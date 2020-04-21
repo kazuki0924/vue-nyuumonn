@@ -9,7 +9,7 @@ new Vue({
     ]
   },
   methods: {
-    toggle(todo) {
+    toggle: function (todo) {
       todo.done = !todo.done
     }
   }
