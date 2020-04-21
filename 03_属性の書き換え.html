@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>属性の書き換え</title>
+    <style>
+      .error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <p v-bind:class="error_class">エラーです</p>
+      <img v-bind:src="img_src" />
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+      var app = new Vue({
+        el: '#app',
+        data: {
+          error_class: 'error',
+          img_src: 'https://media.giphy.com/media/gKO5Y26LUzWcJB10Wa/giphy.gif'
+        }
+      })
+    </script>
+  </body>
+</html>
