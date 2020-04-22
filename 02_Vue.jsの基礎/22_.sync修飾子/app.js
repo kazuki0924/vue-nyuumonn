@@ -16,7 +16,7 @@ const UserForm = {
   },
   methods: {
     update() {
-      this.$emit('update:user-name', this.user_name)
+      this.$emit('update:userName', this.user_name)
     }
   }
 }
@@ -36,7 +36,7 @@ const UserDetail = {
         <span>ユーザー名： {{ user_name }}</span>
       </div>
       <div>
-        <user-form :user-name='user_name' @update:user-name='user_name = $event'></user-form>
+        <user-form :user-name.sync='user_name' @update:user-name='user_name = $event'></user-form>
       </div>
     </div>
   `
